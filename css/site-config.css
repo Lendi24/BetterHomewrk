@@ -1,0 +1,59 @@
+:root {
+    /*---------------------------------------
+    ----------------ROOT HTML----------------
+    ---------------------------------------*/
+
+    /*Removes Default Scrollbar*/
+    -ms-overflow-style: none;
+    /* Scrollbar yeet for IE and old edge (they are dead tho, so who cares?)*/
+    scrollbar-width: none;
+    /* Scrollbar yeet for Firefox */
+
+
+    /*---------------------------------------
+    ---------------PUBLIC VARS---------------
+    ---------------------------------------*/
+
+    /*Navbar*/
+    --nav-colour-option-selected: #eb8d30;
+    --nav-colour-option-hover: #eea55d;
+    --nav-colour-option-text: #ffff;
+    --nav-colour-option-background: #5c5c5c;
+    --nav-colour-banner-background: #2b2b2b3b;
+
+    /*PostCards*/
+    --postcard-colour-container-background: #2b2b2b3b;
+    --postcard-colour-background: #383838;
+    --postcard-colour-text: #fff;
+
+    --postcard-shadow-background: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+    width: 0px;
+    background: transparent;
+}
+
+/* Scrollbar yeet for webkit based browsers (safari, chrome, brave e.t.c.)*/
+
+body {
+    margin: 0;
+    background-image: url("/assets/images/backgrounds/1.jpg");
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+/*---------------------------------------
+    ------------------NOTES------------------
+    ---------------------------------------*/
+/*
+    z-index:
+        0  -  4  : Page Content
+        5  -  9  : Overlay
+        10 -  14 : Navbar
+
+    Im making a note here:
+        Huge success!
+*/
