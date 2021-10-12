@@ -1,3 +1,8 @@
+.header-hr {
+    visibility: hidden;
+    margin:0px;
+}
+
 .header-container {
     display: flex;
     flex-wrap: wrap;
@@ -5,6 +10,16 @@
     justify-content: center;
 }
 
+.header-container a {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.header-container a img{
+    height: 100px;
+}
 
 .navbar {
     display: flex;
@@ -46,5 +61,9 @@
         position: fixed;
         bottom: 0%;
         top: unset;
+    }
+
+    .header-hr {
+        visibility: visible;
     }
 }
